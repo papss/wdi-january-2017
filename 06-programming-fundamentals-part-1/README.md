@@ -1,4 +1,4 @@
-# Ruby FUNdamentals, part 1
+# Programming Fundamentals
 
 Ruby is the primary programming language we'll be learning in this course. Ruby was created by Yukihiro Matsumoto aka Matz in 1995.
 
