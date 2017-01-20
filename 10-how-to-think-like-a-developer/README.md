@@ -12,7 +12,21 @@ As a user...
 I should be able to...
 So that...
 
-
+As a user, I should be able to sort my contacts
+As a user, I should be able to group my contacts
+As a user, I should be able to assign a task to a contact
+As a user, I should be able to share a contact
+As a user, I should be able to add a picture to a contact
+As a user, I should be able to add more than one phone number to a contact
+As a user, I should be able to save my own contact info
+As a user, I should be able to email all contacts at once
+As a user, I should be able to text a contact
+As a user, I should be able to colour code contacts
+As a user, I should be able to export my contacts
+As a user, I should be able to link social media to a contact
+As a user, I should be able to protect my contact list with a password
+As a user, I should be able to search my contacts
+As a user, I should be able to merge duplicate contacts
 
 
 
@@ -23,10 +37,19 @@ So that...
 ## Prioritize
 
 - MUST HAVE
+As a user, I should be able to create a contact
+As a user, I should be able to find a contact
+As a user, I should be able to view contact info
+As a user, I should be able to display a list of all contacts
+As a user, I should be able to edit a contact
+
 
 - SHOULD HAVE
+As a user, I should be able to delete a contact
 
 - COULD HAVE
+As a user, I should be able to log in to see contacts
+As a user, I should be able to customize the fields of a contact
 
 - WON'T HAVE
 
