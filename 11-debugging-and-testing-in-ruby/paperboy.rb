@@ -1,4 +1,6 @@
 require 'pry'
+#binding.pry
+#exit
 class Paperboy
 
   def initialize(name)
@@ -27,12 +29,13 @@ class Paperboy
   end
 
   def calculate_pay(houses)
+    binding.pry
     pay = houses * 0.25
 
     if houses < quota
       pay -= 2
     elsif houses > quota
-      pay += 0.25 * houses - quota
+      pay += 0.25 * (houses - quota)
     end
 
 

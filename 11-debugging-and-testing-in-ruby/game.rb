@@ -1,10 +1,20 @@
+require 'pry'
+require_relative 'player'
+#require './player.rb'
+
 class Game
   attr_reader :width, :height
   attr_accessor :players
 
   def initialize(number_of_players)
+    @width = number_of_players
+    @height = number_of_players
+    @players = []
+
     number_of_players.times do
-      @players << Player.new((0..@width).to_a.sample, (0..@height).to_a.sample)
+      x = (0..@width).to_a.sample
+      y = (0..@height).to_a.sample
+      @players << Player.new(x, y)
     end
   end
 
@@ -14,8 +24,7 @@ class Game
     number_of_players = gets.chomp.to_i
 
     g = new(number_of_players)
-    game.turn
-    end
+    g.turn
   end
 
   def turn
