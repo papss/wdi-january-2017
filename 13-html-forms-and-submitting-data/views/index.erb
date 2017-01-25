@@ -9,6 +9,8 @@
 <form class="new-film" action="/films" method="post">
   <div>
     <!-- input type: text -->
+    <label for="film-title">Title:</label>
+    <input type="text" id="film-title" name="title" value="" placeholder="eg. My Neighbour Totoro">
   </div>
 
   <div>
@@ -16,30 +18,89 @@
   </div>
 
   <div>
-    <!-- textarea -->
+    <label for="film-description">Description</label>
+    <textarea name="description" id="film-description"></textarea>
   </div>
 
   <div>
     <!-- input radio -->
+    <fieldset>
+      <legend>Rating</legend>
+
+      <label>
+        1 star
+        <input id="rating-1" type="radio" name="rating" value="1">
+      </label>
+
+      <label>
+        2 stars
+        <input type="radio" name="rating" value="2">
+      </label>
+      <label>
+        3 stars
+        <input type="radio" name="rating" value="3">
+      </label>
+
+    </fieldset>
   </div>
 
   <div>
     <!-- input checkbox -->
+    <fieldset>
+
+      <legend>Genre</legend>
+
+      <label>
+        Drama
+        <input type="checkbox" name="genre[]" value="Drama">
+      </label>
+      <label>
+        Comedy
+        <input type="checkbox" name="genre[]" value="Comedy">
+      </label>
+
+      <label>
+        Documentary
+        <input type="checkbox" name="genre[]" value="Documentary">
+      </label>
+
+      <label>
+        Animated
+        <input type="checkbox" name="genre[]" value="Animated">
+      </label>
+
+    </fieldset>
+
   </div>
 
   <div>
     <!-- select / option -->
+    <label for="film-country">Country</label>
+    <select id="film-country" name="country">
+      <option value="">Please select a country</option>
+      <option value="CA">Canada</option>
+      <option value="GB">United Kingdom</option>
+      <option value="JP">Japan</option>
+    </select>
   </div>
 
 
   <div>
     <!-- file -->
+    <!-- <input type="file" name="name" value=""> -->
   </div>
 
   <!-- hidden -->
+  <!-- <input type="hidden" name="loyalty-points-code" value="lskdjflkjfklds"> -->
 
   <div>
     <!-- input submit / button -->
+    <!-- <input type="submit" value="Go!"> -->
+    <button type="submit" >
+      <img src="http://placebear.com/500/500" alt="a bear" />
+      go!
+    </button>
+
   </div>
 
 </form>
